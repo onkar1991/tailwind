@@ -8,10 +8,27 @@
     <link href="../public/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="smooth-scrollbar.css" rel="stylesheet">
-</head>
-<body class="bg-cyan-900">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <header class="bg-cyan-900 py-5 px-12">    
+
+
+</head>
+<body>
+    <div class="mode fixed right-[2rem] bottom-8  z-[999]" id="switcher">
+        
+        <input type="checkbox" name="mode" id="model" class="hidden">
+        <label for="model" class="cursor-pointer bg-orange-500 px-2 py-2 rounded-full relative before:content-[''] before:absolute before:w-7 before:h-7 before:bg-white before:rounded-full before:top-1/2 before:-translate-y-1/2  before:transition-left
+        ">
+            <i class="ri-sun-fill text-lg text-white mr-14"></i>
+            <i class="ri-moon-fill text-lg text-white"></i></label>
+    </div>
+    <div id="butter">
+    <div class="bg-cyan-900 dark:bg-black">
+
+
+    
+ 
+    <header class="py-5 px-12 dark:bg-black sticky top-0 z-50">    
         <div class="container mx-auto flex justify-between items-center">        
             <div class="logo">
                 <img src="../public/images/logo.svg" alt="logo" class="w-14">
@@ -31,7 +48,7 @@
          </div>
     </header>
 
-    <section class="hero text-center py-36 bg-cyan-900 px-12">
+    <section class="hero text-center py-36">
         <div class="container mx-auto">
             <h1 class="font-serif text-7xl text-white">Are you looking for <span>tourist guide</span></h1>
             <p class="w-2/3 mx-auto text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -42,7 +59,7 @@
         </div>
     </section>
 
-    <section class="team bg-cyan-900 px-12 pb-12 overflow-hidden">
+    <section class="team px-12 pb-12 overflow-hidden">
         <div class="container mx-auto">
             <h2 class="font-serif text-7xl text-white">Top 10 guides</h2>
             <p class="w-2/3 text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -127,35 +144,35 @@
             <div class="w-1/2 mx-auto">
                 <ul class="flex flex-col space-y-4 divide-y-2">
                     <li class="flex items-center pt-4">
-                        <img src="/public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
+                        <img src="../public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
                         <div class="info px-4">
                             <h5 class="text-white text-2xl">Sabha</h5>
                             <a href="Sabha@gmail.com" class="text-white hover:text-cyan-300">Sabha@gmail.com</a>
                         </div>
                     </li>
                     <li class="flex items-center pt-4">
-                        <img src="/public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
+                        <img src="../public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
                         <div class="info px-4">
                             <h5 class="text-white text-2xl">Sabha</h5>
                             <a href="Sabha@gmail.com" class="text-white hover:text-cyan-300">Sabha@gmail.com</a>
                         </div>
                     </li>
                     <li class="flex items-center pt-4">
-                        <img src="/public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
+                        <img src="../public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
                         <div class="info px-4">
                             <h5 class="text-white text-2xl">Sabha</h5>
                             <a href="Sabha@gmail.com" class="text-white hover:text-cyan-300">Sabha@gmail.com</a>
                         </div>
                     </li>
                     <li class="flex items-center pt-4">
-                        <img src="/public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
+                        <img src="../public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
                         <div class="info px-4">
                             <h5 class="text-white text-2xl">Sabha</h5>
                             <a href="Sabha@gmail.com" class="text-white hover:text-cyan-300">Sabha@gmail.com</a>
                         </div>
                     </li>
                     <li class="flex items-center pt-4">
-                        <img src="/public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
+                        <img src="../public/images/pexels-firaaz-hisyari-2762110.jpg" class="w-24 h-24 rounded-full">
                         <div class="info px-4">
                             <h5 class="text-white text-2xl">Sabha</h5>
                             <a href="Sabha@gmail.com" class="text-white hover:text-cyan-300">Sabha@gmail.com</a>
@@ -165,32 +182,50 @@
             </div>
         </div>
     </section>
-   
+
+    <section class="py-14">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="w-2/6">
+                <img src="../public/images/pexels-godisable-jacob-1340724.jpg">
+            </div>
+            
+            <form class="flex flex-col w-2/6 flex-wrap bg-white p-12 space-y-4 rounded-2xl">
+                <h2 class="font-serif text-2xl">Register</h2>
+                <input type="text" name="name"  class="border-2 border-stone-400 px-2 py-4 rounded-md focus:border-cyan-900" placeholder="Enter name or phone">
+                <input type="password" name="pass"  class="border-2 border-stone-400 px-2 py-4 rounded-md focus:border-cyan-900" placeholder="Password">
+                <button class="bg-orange-500 text-white px-2 py-4 rounded-md">Login</button>
+            </form>
+        </div>
+
+    </section>
+</div>
+</div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="smooth-scrollbar.js"></script>
+<script src="butter.js"></script>
+<script src="scripts.js"></script>
+<script async>
+    var root = document.getElementsByTagName( 'html' )[0]; 
+    var switcher = document.getElementById("switcher");
+        if(localStorage.getItem("mode") == "dark"){
+            root.classList.add("dark");
+            switcher.classList.add("dark-selected");
+            document.getElementById("model").checked = true;
+        }
+        else{
+            root.classList.remove("dark");
+            switcher.classList.remove("dark-selected");
+        }
+    </script>
+<!-- <script src="smooth-scrollbar.js"></script> -->
 
 
-<script>
+<!-- <script>
     var Scrollbar = window.Scrollbar;  
     var scrollbar = Scrollbar.init(document.body, { speed: 0.75 });
-  </script>
+  </script> -->
 
-<script>
-
-
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-margin:30,
-loop:false,
-items:4,
-autoplay:false,
-smartSpeed:1000,
-autoplayTimeout:2000
-
-  });
-});
-    </script>
 
 </html>

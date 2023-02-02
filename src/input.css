@@ -16,3 +16,8 @@ body{
     height: 100vh;
     overflow: auto;
 }
+
+.dark-selected label::before{
+    left: 80px !important;
+
+}
