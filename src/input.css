@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    @font-face {
+        font-family: 'Mabry Pro';
+        src:url('../src/fonts/MabryPro-Bold.woff2') format('woff2'),
+            url('../src/fonts/MabryPro-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Mabry Pro';
+        src: url('../src/fonts/MabryPro-Medium.woff2') format('woff2'),
+            url('../src/fonts/MabryPro-Medium.woff') format('woff');
+
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+         
+
+    
+    @font-face {
+        font-family: 'Mabry Pro';
+
+        src: 
+
+            url('../src/fonts/MabryPro-Italic.woff2') format('woff2'),
+            url('../src/fonts/abryPro-Italic.woff') format('woff');
+           
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Mabry Pro';
+        src:url('../src/fonts/MabryPro-Regular.woff2') format('woff2'),
+            url('../src/fonts/MabryPro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+        
+    body{
+        font-family: 'Mabry Pro';
+    }
+}
+
+
+
 .owl-carousel .owl-stage-outer{
     overflow: visible !important;
 }
@@ -11,13 +63,78 @@
     background-size:cover ;
 }
 
-body{
+/* body{
     width: 100%;
     height: 100vh;
     overflow: auto;
-}
+} */
 
 .dark-selected label::before{
     left: 80px !important;
 
+}
+
+.learn-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 45px 10px 20px;
+}
+
+.learn-btn span{
+    position: relative;
+    display: inline-block;
+    transform:translateX(-10px);
+    transition: transform .5s ease-out;
+}
+
+
+.learn-btn:before, .learn-btn:after {
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    right: 0;
+    background: #f97316;
+    content: "";
+    height: 30px;
+    border-radius: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s cubic-bezier(.215,.61,.355,1);
+}
+
+.learn-btn:after {
+    content: "\ea6e";
+    font-family: 'remixicon';
+    transition: none;
+    
+}
+
+.learn-btn:hover:before {
+width: 100%;
+height: 100%;
+border-radius: 50px;
+}
+
+.learn-btn:hover span{
+    transform:translateX(15px);
+}
+
+.learn-btn:hover:after{
+    visibility: hidden;
+}
+
+.loader{
+position: fixed;
+top: 0px;
+left: 0px;  
+/* left: -100%; */
+width: 100%;
+height: 100%;
+background-color:#3b70a9;
+transform: scaleX(0);
+z-index: 99;
+opacity: 0;
+/* opacity: 0; */
+/* visibility: hidden; */
 }

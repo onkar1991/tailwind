@@ -1,3 +1,4 @@
+
 butter.init({
     wrapperId: 'butter',
     cancelOnTouch: false,
@@ -15,6 +16,8 @@ autoplayTimeout:2000
 
   });
 });
+
+
 
 
     
@@ -45,3 +48,49 @@ autoplayTimeout:2000
         } 
         
         });
+
+        var root = document.getElementsByTagName( 'html' )[0]; 
+        var switcher = document.getElementById("switcher");
+            if(localStorage.getItem("mode") == "dark"){
+                root.classList.add("dark");
+                switcher.classList.add("dark-selected");
+                document.getElementById("model").checked = true;
+            }
+            else{
+                root.classList.remove("dark");
+                switcher.classList.remove("dark-selected");
+            }
+
+            let tl = gsap.timeline({delay:1,
+           default:{opacity:0}
+            });
+
+            function loaderLeave(){
+          
+            console.log("hey");
+            tl.to(".loader",{autoAlpha:1,scaleX:1,transformOrigin:"left",duration:1,ease: Power4.easeOut});
+            tl.to(".loader",{autoAlpha:1,scaleX:0,transformOrigin:"right",duration:1, ease:Power4.easeOut,});
+          
+            }
+
+            //setTimeout(loaderEnter, 3000);
+            function loaderEnter(){
+             
+              console.log("hey");
+             // tl.to(".loader",{autoAlpha:1,scaleX:1,transformOrigin:"left",duration:1,ease: Power4.easeOut});
+              tl.to(".loader",{autoAlpha:1,scaleX:0,transformOrigin:"right",duration:1, ease:Power4.easeOut,});
+              }
+              
+            barba.init({
+              transitions: [{
+               // name: 'default-transition',
+                //sync: true,
+                  async leave() {
+                        loaderLeave();
+                  },
+                  enter() {
+                   // loaderEnter();
+                  }
+              }]
+            });
+            

@@ -7,52 +7,67 @@
     <title>Document</title>
     <link href="../public/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="smooth-scrollbar.css" rel="stylesheet">
+    <!-- <link href="smooth-scrollbar.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-
-
 </head>
-<body>
-    <div class="mode fixed right-[2rem] bottom-8  z-[999]" id="switcher">
-        
-        <input type="checkbox" name="mode" id="model" class="hidden">
-        <label for="model" class="cursor-pointer bg-orange-500 px-2 py-2 rounded-full relative before:content-[''] before:absolute before:w-7 before:h-7 before:bg-white before:rounded-full before:top-1/2 before:-translate-y-1/2  before:transition-left
-        ">
-            <i class="ri-sun-fill text-lg text-white mr-14"></i>
-            <i class="ri-moon-fill text-lg text-white"></i></label>
-    </div>
+<body data-barba="wrapper" class= "bg-main dark:bg-black">
+
+    <div class="loader">
+    </div>  
+         <div class="mode fixed right-[2rem] bottom-8  z-[999]" id="switcher">
+            
+            <input type="checkbox" name="mode" id="model" class="hidden">
+            <label for="model" class="cursor-pointer bg-orange-500 px-2 py-2 rounded-full relative before:content-[''] before:absolute before:w-7 before:h-7 before:bg-white before:rounded-full before:top-1/2 before:-translate-y-1/2  before:transition-left
+            ">
+                <i class="ri-sun-fill text-lg text-white mr-14"></i>
+                <i class="ri-moon-fill text-lg text-white"></i></label>
+        </div>
+   
     <div id="butter">
-    <div class="bg-cyan-900 dark:bg-black">
-
-
-    
- 
-    <header class="py-5 px-12 dark:bg-black sticky top-0 z-50">    
-        <div class="container mx-auto flex justify-between items-center">        
-            <div class="logo">
-                <img src="../public/images/logo.svg" alt="logo" class="w-14">
-            </div>
-        
-            <div class="navigation">
-                <nav>
+        <header class="py-5 px-12 dark:bg-black sticky top-0 z-50">    
+            <div class="container mx-auto flex items-center">        
+                <div class="logo">
+                    <a href="index.html"><img src="../public/images/tourist.png" alt="logo" class="w-16"></a>
+                </div>
+            
+                <div class="navigation mx-14">
+                    <nav>
+                        <ul class="flex text-white font-sans text-xl space-x-10">
+                            <li><a href="index.html" class="hover:text-cyan-300 text-base">Home</a></li>
+                            <li><a href="javascript:void(0)"  class="hover:text-cyan-300 text-base">Guides</a></li>
+                            <li><a href="javascript:void(0)" class="hover:text-cyan-300 text-base">FAQ's</a></li>
+                            <li><a href="javascript:void(0)" class="hover:text-cyan-300 text-base">Blog</a></li>
+                            <li><a href="javascript:void(0)" class="hover:text-cyan-300 text-base"> Contact us</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                <nav class="ml-auto">
                     <ul class="flex text-white font-sans text-xl space-x-10">
-                        <li><a href="javascript:void(0)" class="hover:text-cyan-300">Home</a></li>
-                        <li><a href="javascript:void(0)" class="hover:text-cyan-300">About</a></li>
-                        <li><a href="javascript:void(0)" class="hover:text-cyan-300">Gallery</a></li>
-                        <li><a href="javascript:void(0)" class="hover:text-cyan-300">Blog</a></li>
-                        <li><a href="javascript:void(0)" class="hover:text-cyan-300"> Contact us</a></li>
+                        <li><a href="login.html" class="text-white learn-btn font-medium text-base"><span>My account</span></a></li>
+                        <li><a href="login.html" class="text-white learn-btn font-medium text-base"><span>Join as guide</span></a></li>
                     </ul>
                 </nav>
-            </div>
-         </div>
-    </header>
-
+             </div>
+        </header>
+    <div data-barba="container" data-barba-namespace="home">
+  
+ 
+  
+    
+    
     <section class="hero text-center py-36">
         <div class="container mx-auto">
-            <h1 class="font-serif text-7xl text-white">Are you looking for <span>tourist guide</span></h1>
-            <p class="w-2/3 mx-auto text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-            <a href="javascript:void(0)" class="px-12 py-3 text-white bg-orange-600 text-2xl inline-block rounded-2xl hover:bg-orange-700">Click Here</a>
+            <div class="text-white  font-Heading font-medium ">
+                <span class="bg-secondary text-2xl px-7 rounded-md py-3">Are you looking for</span></div>
+            <h1 class="text-[5rem] text-white font-bold font-Heading flex gap-28 justify-center py-10 px-10">
+                 <span><span></span>Partner Buddy</span>
+                 <!-- <span>Hotels</span>
+                 <span>Vacation</span> -->
+                </h1>
+            <p class="w-3/5 mx-auto text-2xl font-normal  text-white pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled specimen book. </p>
+            <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl mr-8"><span>How it works</span></a>
+            <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl"><span>Join as host</span></a>
             <video autoplay muted loop class="w-3/4 mx-auto rounded-full mt-10">
                 <source src="../public/production ID_4873843.mp4" type="video/mp4">
             </video>
@@ -61,7 +76,7 @@
 
     <section class="team px-12 pb-12 overflow-hidden">
         <div class="container mx-auto">
-            <h2 class="font-serif text-7xl text-white">Top 10 guides</h2>
+            <h2 class="font-Heading font-bold text-7xl text-white">Top guides</h2>
             <p class="w-2/3 text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 
             <div class="slider owl-carousel">
@@ -127,11 +142,168 @@
 
         </div>
     </section>
+   
+
+    <section class="team px-12 pb-12 overflow-hidden">
+        <div class="container mx-auto">
+            <h2 class="font-Heading font-bold text-7xl text-white">Best partners near you</h2>
+            <p class="w-2/3 text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+            <div class="slider owl-carousel">
+                <div class="slider__item">
+                    <img src="../public/images/hotel-1.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Hypnos</p>
+                        <p class="text-base capitalize pl-[10px]">united states</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                
+                </div>
+                <div class="slider__item">
+                    <img src="../public/images/hotel-2.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">The Nectarine</p>
+                        <p class="text-base capitalize pl-[10px]">Pakistan</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                        
+                    </div>
+                    
+                </div>
+         
+
+            <div class="slider__item">
+                <img src="../public/images/hotel-3.jpg" class="rounded-3xl transition-all hover:scale-105">
+                <div class="info text-white pt-5 px-5 absolute bottom-5">
+                    <p class="text-2xl mb-2 pl-[10px]">Saros</p>
+                    <p class="text-base capitalize pl-[10px]">Italy</p>
+                    <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                </div>
+            </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/hotel-4.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Dritan Stay</p>
+                        <p class="text-base capitalize pl-[10px]">France</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/hotel-5.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Tangerine</p>
+                        <p class="text-base capitalize pl-[10px]">Canada</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/hotel-6.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Pearl Lodge</p>
+                        <p class="text-base capitalize pl-[10px]">united states</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+               
+
+                <div class="slider__item">
+                    <img src="../public/images/hotel-1.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Olive Garden</p>
+                        <p class="text-base capitalize pl-[10px]">Brazil</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+    </section>
+
+    <!-- <section class="team px-12 pb-12 overflow-hidden">
+        <div class="container mx-auto">
+            <h2 class="font-Heading font-bold text-7xl text-white">Best Hotels</h2>
+            <p class="w-2/3 text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+            <div class="slider owl-carousel">
+                <div class="slider__item">
+                    <img src="../public/images/holiday-1.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Hypnos</p>
+                        <p class="text-base capitalize pl-[10px]">united states</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                
+                </div>
+                <div class="slider__item">
+                    <img src="../public/images/holiday-2.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">The Nectarine</p>
+                        <p class="text-base capitalize pl-[10px]">Pakistan</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                        
+                    </div>
+                    
+                </div>
+         
+
+            <div class="slider__item">
+                <img src="../public/images/holiday-3.jpg" class="rounded-3xl transition-all hover:scale-105">
+                <div class="info text-white pt-5 px-5 absolute bottom-5">
+                    <p class="text-2xl mb-2 pl-[10px]">Saros</p>
+                    <p class="text-base capitalize pl-[10px]">Italy</p>
+                    <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                </div>
+            </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/holiday-4.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Dritan Stay</p>
+                        <p class="text-base capitalize pl-[10px]">France</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/holiday-5.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Tangerine</p>
+                        <p class="text-base capitalize pl-[10px]">Canada</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="../public/images/holiday-6.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Pearl Lodge</p>
+                        <p class="text-base capitalize pl-[10px]">united states</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+               
+
+                <div class="slider__item">
+                    <img src="../public/images/holiday-1.jpg" class="rounded-3xl transition-all hover:scale-105">
+                    <div class="info text-white pt-5 px-5 absolute bottom-5">
+                        <p class="text-2xl mb-2 pl-[10px]">Olive Garden</p>
+                        <p class="text-base capitalize pl-[10px]">Brazil</p>
+                        <a href="javascript:void(0)" class="text-white learn-btn font-medium text-base"><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+    </section> -->
 
     <section class="call-action px-12 pt-52 pb-96 bg-cover relative before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-black before:bg-opacity-0  before:content-['*']" >
         <div class="container mx-auto  flex items-end flex-wrap flex-col text-right">
             <div class="w-1/2">
-            <h1 class="font-serif text-7xl text-white">Are you looking for <span>tourist guide</span></h1>
+            <h1 class="font-Heading font-medium text-7xl text-white">Are you looking for <span>tourist guide</span></h1>
             <p class="text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             <a href="javascript:void(0)" class="px-12 py-3 text-white bg-orange-600 text-2xl inline-block rounded-2xl hover:bg-orange-700">Click Here</a>
             </div>
@@ -139,7 +311,48 @@
         </div>
     </section>
 
-    <section class="py-14">
+    <section class="px-12 py-32">
+        <h2 class="font-Heading font-bold text-7xl text-white">Best Places near you</h2>
+            <p class="w-2/3 text-2xl font-normal  text-white pt-8 pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <div class="container mx-auto flex gap-7">
+            <div class="w-6/12 space-y-7">
+                <div class="benifit-first bg-[#2C74B3] p-10 rounded-3xl">
+                <h3 class="text-white font-Heading font-bold text-[3rem] leading-[4rem]">The standard Lorem Ipsum passage, used since</h3>
+                <p class="text-white text-2xl py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, eveniet, ad hic vitae, asperiores architecto corrupti est aut itaque molestiae cupiditate? Veniam, optio accusantium. Nulla eos voluptatum perspiciatis modi dolorem.</p>
+                <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl mr-8"><span>Looking for guide</span></a>
+            </div>
+
+            <div class="benifit-first bg-blue-900 p-10 rounded-3xl">
+                <h3 class="text-white font-Heading font-bold text-[3rem] leading-[4rem]">The standard Lorem Ipsum passage, used since</h3>
+                <p class="text-white text-2xl py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, eveniet, ad hic vitae, asperiores architecto corrupti est aut itaque molestiae cupiditate? Veniam, optio accusantium. Nulla eos voluptatum perspiciatis modi dolorem.</p>
+                <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl mr-8"><span>Looking to hotel</span></a>
+            </div>
+
+            
+        </div>
+
+        <div class="w-6/12 space-y-7">
+            <div class="benifit-first bg-sky-500 p-10 rounded-3xl mt-20">
+            <h3 class="text-white font-Heading font-bold text-[3rem] leading-[4rem]">The standard Lorem Ipsum passage, used since</h3>
+            <p class="text-white text-2xl py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, eveniet, ad hic vitae, asperiores architecto corrupti est aut itaque molestiae cupiditate? Veniam, optio accusantium. Nulla eos voluptatum perspiciatis modi dolorem.</p>
+            <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl mr-8"><span>Looking to partner</span></a>
+        </div>
+
+        <div class="benifit-first bg-orange-400 p-10 rounded-3xl">
+            <h3 class="text-white font-Heading font-bold text-[3rem] leading-[4rem]">The standard Lorem Ipsum passage, used since</h3>
+            <p class="text-white text-2xl py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, eveniet, ad hic vitae, asperiores architecto corrupti est aut itaque molestiae cupiditate? Veniam, optio accusantium. Nulla eos voluptatum perspiciatis modi dolorem.</p>
+            <a href="javascript:void(0)" class="text-white learn-btn font-medium text-2xl mr-8"><span>Looking to partner</span></a>
+        </div>
+
+        
+    </div>
+
+        </div>
+    
+        </section>
+
+
+    <!-- <section class="py-14">
         <div class="container mx-auto">
             <div class="w-1/2 mx-auto">
                 <ul class="flex flex-col space-y-4 divide-y-2">
@@ -181,51 +394,17 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="py-14">
-        <div class="container mx-auto flex justify-center items-center">
-            <div class="w-2/6">
-                <img src="../public/images/pexels-godisable-jacob-1340724.jpg">
-            </div>
-            
-            <form class="flex flex-col w-2/6 flex-wrap bg-white p-12 space-y-4 rounded-2xl">
-                <h2 class="font-serif text-2xl">Register</h2>
-                <input type="text" name="name"  class="border-2 border-stone-400 px-2 py-4 rounded-md focus:border-cyan-900" placeholder="Enter name or phone">
-                <input type="password" name="pass"  class="border-2 border-stone-400 px-2 py-4 rounded-md focus:border-cyan-900" placeholder="Password">
-                <button class="bg-orange-500 text-white px-2 py-4 rounded-md">Login</button>
-            </form>
-        </div>
-
-    </section>
 </div>
 </div>
-
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="butter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
 <script src="scripts.js"></script>
-<script async>
-    var root = document.getElementsByTagName( 'html' )[0]; 
-    var switcher = document.getElementById("switcher");
-        if(localStorage.getItem("mode") == "dark"){
-            root.classList.add("dark");
-            switcher.classList.add("dark-selected");
-            document.getElementById("model").checked = true;
-        }
-        else{
-            root.classList.remove("dark");
-            switcher.classList.remove("dark-selected");
-        }
-    </script>
-<!-- <script src="smooth-scrollbar.js"></script> -->
-
-
-<!-- <script>
-    var Scrollbar = window.Scrollbar;  
-    var scrollbar = Scrollbar.init(document.body, { speed: 0.75 });
-  </script> -->
-
 
 </html>
